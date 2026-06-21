@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Andeel Studio | Immersive XR Experiences</title>
+  <meta name="description"
+    content="Andeel Studio crafts high-quality virtual reality assets for developers and educators. Explore our Unity Asset Store products." />
+  <meta name="keywords" content="VR, XR, Unity Asset Store, VR Classroom, immersive simulation, educational VR" />
+  <meta name="author" content="Andeel Studio" />
+
+  <!-- Open Graph (social sharing preview) -->
+  <meta property="og:title" content="Andeel Studio | Immersive XR Experiences" />
+  <meta property="og:description" content="High-quality VR assets for developers and educators." />
+  <meta property="og:image" content="assets/og-preview.png" />
+  <meta property="og:url" content="https://andeelstudio.github.io" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+
+      <a href="#" class="nav-logo" id="nav-logo">
+        <img src="assets/logo.png" alt="Andeel Studio" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <!-- PHILOSOPHY NAV LINK — uncomment when section is ready
+        <li><a href="#craft">Philosophy</a></li>
+        -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="https://assetstore.unity.com/publishers/110968" target="_blank" rel="noopener noreferrer"
+        class="btn btn-outline" id="nav-store-btn">
+        Asset Store ↗
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now available on Unity Asset Store
+      </div>
+
+      <h1 class="hero-title">
+        We Build<br />
+        <span class="gradient-text">Immersive XR</span><br />
+        Experiences
+      </h1>
+
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary" id="hero-explore-btn">Explore Our Work</a>
+        <a href="https://assetstore.unity.com/publishers/110968" target="_blank" rel="noopener noreferrer"
+          class="btn btn-ghost" id="hero-store-btn">
+          Unity Asset Store ↗
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Published Assets</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Active on Store</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">App Published</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">VR/XR</span>
+          <span class="stat-label">Specialization</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         HERO VISUAL — commented out until you have a real image/video
+         LOCATION: end of <section class="hero"> (around line 133–149)
+         To restore: remove the comment tags below and replace the
+         .placeholder-visual div with your actual <img> or <video>.
+         See PLACEHOLDERS.md → "Images / Media to Replace" for full instructions.
+         ============================================================
+    <div class="hero-visual" id="hero-visual" aria-label="Studio visual placeholder">
+      <div class="placeholder-visual">
+        <div class="placeholder-label">
+          📐 REPLACE WITH HERO IMAGE OR VIDEO<br />
+          <small>Recommended: 1200×700px screenshot or short looping video reel</small>
+        </div>
+      </div>
+    </div>
+    -->
+  </section>
+
+
+  <!-- ============================================================
+       MARQUEE / TICKER STRIP
+       JS (script.js — section 8) clones this track for seamless looping.
+       To add/remove items, edit the spans below only once — the clone
+       is created automatically at runtime.
+       ============================================================ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track">
+      <span>VR Development</span>
+      <span class="marquee-dot">·</span>
+      <span>XR Education</span>
+      <span class="marquee-dot">·</span>
+      <span>Immersive Simulation</span>
+      <span class="marquee-dot">·</span>
+      <span>Interactive Experiences</span>
+      <span class="marquee-dot">·</span>
+      <span>Immersive Technology</span>
+      <span class="marquee-dot">·</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-left">
+        <span class="section-label">About the Studio</span>
+        <h2 class="about-title">
+          Focused on craft.<br />Built for the future.
+        </h2>
+      </div>
+      <div class="about-right">
+        <p class="about-body">
+          Andeel Studio is an independent XR studio specializing in virtual reality
+          templates and simulation tools. Every asset is designed with developer
+          experience in mind — clean code, intuitive design, and production-ready quality.
+        </p>
+        <p class="about-body">
+          Our work sits at the intersection of education and immersive technology,
+          helping developers ship VR experiences faster without compromising on quality.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <span class="pillar-label">Production-Ready</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🎓</span>
+            <span class="pillar-label">Education-Focused</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🔬</span>
+            <span class="pillar-label">XR Specialized</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FEATURED WORK — VR CLASSROOM SPOTLIGHT
+       ============================================================ -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">What We've Built</h2>
+      </div>
+
+      <div class="spotlight-card">
+
+        <!-- SPOTLIGHT: Main Visual Area -->
+        <div class="spotlight-media">
+          <img src="assets/vrclassroomsimulationtemplate.png" alt="VR Classroom Simulation Template"
+            class="spotlight-img" />
+        </div>
+
+        <!-- SPOTLIGHT: Info Panel -->
+        <div class="spotlight-info">
+          <div class="spotlight-tags">
+            <span class="tag">Virtual Reality</span>
+            <span class="tag">Education</span>
+            <span class="tag">Unity 6+</span>
+            <span class="tag">URP</span>
+          </div>
+
+          <h3 class="spotlight-title">VR Classroom Simulation Template</h3>
+
+          <p class="spotlight-desc">
+            A fully interactive virtual reality classroom simulation template built
+            for Unity. Comes complete with a rich environment, interactive props,
+            and teacher controls — everything you need to build VR educational
+            experiences from day one.
+          </p>
+
+          <ul class="spotlight-features">
+            <li>✓ Full classroom environment with optimized assets</li>
+            <li>✓ Compatible with major VR headsets</li>
+            <li>✓ Clean, documented, extensible codebase</li>
+            <li>✓ Unity 6+ and URP support</li>
+          </ul>
+
+          <div class="spotlight-cta">
+            <a href="https://assetstore.unity.com/packages/slug/386510" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-large" id="asset-store-btn">
+              View on Asset Store ↗
+            </a>
+          </div>
+        </div>
+
+      </div><!-- end spotlight-card -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PHILOSOPHY / CRAFT SECTION — commented out
+       LOCATION: between </section> (Featured Work, ~line 325) and
+                 <section class="pipeline" ...> (~line 375)
+       To restore:
+         1. Remove the comment tags wrapping this block
+         2. Uncomment the Philosophy nav link in <ul class="nav-links">
+         3. Uncomment the Philosophy link in <footer class="footer-nav">
+       ============================================================
+  <section class="craft section" id="craft">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Philosophy</span>
+        <h2 class="section-title">How We Work</h2>
+      </div>
+
+      <div class="craft-grid">
+        <div class="craft-card">
+          <div class="craft-icon">01</div>
+          <h3 class="craft-card-title">Quality First</h3>
+          <p class="craft-card-body">
+            Every asset ships only when it meets our internal bar for code quality,
+            performance, and visual polish. No half-finished releases.
+          </p>
+        </div>
+        <div class="craft-card">
+          <div class="craft-icon">02</div>
+          <h3 class="craft-card-title">Developer Experience</h3>
+          <p class="craft-card-body">
+            Clean architecture, thorough documentation, and intuitive APIs.
+            You should be able to integrate and extend our work in minutes, not days.
+          </p>
+        </div>
+        <div class="craft-card">
+          <div class="craft-icon">03</div>
+          <h3 class="craft-card-title">Built to Last</h3>
+          <p class="craft-card-body">
+            We build for longevity. Consistent Unity version support, responsive
+            updates, and a commitment to every product we ship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+
+  <!-- ============================================================
+       PIPELINE / "WHAT'S NEXT" SECTION
+       (Signals growth without revealing specifics)
+       ============================================================ -->
+  <section class="pipeline section" id="pipeline">
+    <div class="container pipeline-inner">
+      <div class="pipeline-text">
+        <span class="section-label">In Development</span>
+        <h2 class="pipeline-title">More is coming.</h2>
+        <p class="pipeline-body">
+          We're currently working on new XR assets and simulation tools.
+          Follow us for updates as we expand our catalog.
+        </p>
+        <a href="#contact" class="btn btn-outline" id="pipeline-updates-btn">
+          Get Notified
+        </a>
+      </div>
+      <div class="pipeline-visual" aria-hidden="true">
+        <div class="pipeline-card-ghost"></div>
+        <div class="pipeline-card-ghost pipeline-card-ghost--2"></div>
+        <div class="pipeline-card-ghost pipeline-card-ghost--3">
+          <span>Soon™</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT / CTA SECTION
+       ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="contact-title">Let's Talk</h2>
+      <p class="contact-body">
+        Have a question, a collaboration idea, or feedback on our assets?
+        We'd love to hear from you.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:andeelstudio@gmail.com" class="contact-link" id="contact-email">
+          <span class="contact-link-icon">✉</span>
+          andeelstudio@gmail.com
+        </a>
+        <a href="https://assetstore.unity.com/publishers/110968" target="_blank" rel="noopener noreferrer"
+          class="contact-link" id="contact-store-link">
+          <span class="contact-link-icon">🛒</span>
+          Unity Asset Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <img src="assets/logo.png" alt="Andeel Studio" class="nav-logo-img" />
+        </a>
+        <p class="footer-tagline">Immersive XR Experiences</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <!-- PHILOSOPHY FOOTER LINK — uncomment when section is ready
+        <a href="#craft">Philosophy</a>
+        -->
+        <a href="#contact">Contact</a>
+        <a href="https://assetstore.unity.com/publishers/110968" target="_blank" rel="noopener noreferrer">
+          Asset Store ↗
+        </a>
+      </nav>
+
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> Andeel Studio. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
